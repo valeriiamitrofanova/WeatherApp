@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+body {
+  font-family: "Open Sans", serif;
+  background: white !important;
+}
+
+.wrapper {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.together {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 5px 10px 18px #5d5d5e3b;
+}
+
+.info {
+  height: 65vh;
+  background: url("./img/polygon.jpg") center center no-repeat;
+  background-blend-mode: multiply;
+  background-color: #9b8f8f;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+.form {
+  height: 65vh;
+  padding-top: 100px;
+  padding-left: 50px;
+
+  background-color: rgb(240, 240, 240);
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 2px rgb(68, 68, 68);
+  width: 50%;
+  padding-bottom: 4px;
+  color: rgb(68, 68, 68);
+  font-weight: lighter;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(68, 68, 68);
+}
+
+input::-moz-placeholder {
+  color: rgb(68, 68, 68);
+}
+
+button {
+  padding: 8px 20px;
+  margin: 0 2px;
+  cursor: pointer;
+  background-color: #ebedf0;
+  color: rgb(68, 68, 68);
+  outline: none !important;
+  border-radius: 20px;
+  box-shadow: 9px 9px 12px 0.02px #aaaaaa80;
+  transition: 0.3s;
+}
+
+button:hover {
+  border: 2px solid #9c9c9c;
+  position: relative;
+  top: 2px;
+  box-shadow: 9px 9px 12px 0.02px rgb(240, 240, 240);
+}
+
+button:active {
+  border-bottom: 2px solid transparent;
+  border-color: transparent;
+  position: relative;
+  top: 2px;
+}
+
+.info h2 {
+  font-size: 3em;
+  color: #fff;
+}
+
+.info p {
+  color: #e4e4e4;
+  font-weight: bold;
+}
+
+.infoWeath {
+  width: 60%;
+  font-size: 20px;
+  color: rgb(68, 68, 68);
+}
+
+.error {
+  color: rgb(68, 68, 68);
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1300px) {
+  .wrapper {
+    align-items: initial;
+  }
+
+  .info {
+    height: 20vh;
+  }
+  .form {
+    height: 80vh;
+  }
+
+  .together {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 618px) {
+  .together {
+    /* height: 10vh; */
+    width: 90%;
+  }
+}
